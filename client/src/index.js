@@ -25,19 +25,3 @@ ReactDOM.render(
             </div>
         </BrowserRouter>
     </Provider>, document.getElementById('root'));
-
-
-// class App extends Component {
-//     render() {
-//         return (
-//             <div>
-                
-//                 <FormComponent />
-//             </div>
-//         );
-//     }
-// }
-
-// export default App;
-
-// ReactDOM.render(<App/>, document.querySelector('#root'));
