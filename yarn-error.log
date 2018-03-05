@@ -1,0 +1,74 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn test src/App.test.js
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.9.4
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm run start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "author": "Damian Szczesniak",
+    "license": "ISC",
+    "dependencies": {
+      "axios": "^0.18.0",
+      "body-parser": "^1.18.2",
+      "concurrently": "^3.5.1",
+      "create-react-app": "^1.5.2",
+      "express": "^4.16.2",
+      "moment": "^2.20.1",
+      "mongodb": "^3.0.3",
+      "mongoose": "^5.0.7",
+      "prop-types": "^15.6.1",
+      "react-datepicker": "^1.2.1",
+      "react-redux": "^5.0.7",
+      "react-router-dom": "^4.2.2",
+      "redux": "^3.7.2",
+      "redux-form": "^7.2.3",
+      "redux-promise": "^0.5.3",
+      "yarn": "^1.5.1"
+    },
+    "devDependencies": {
+      "enzyme": "^3.3.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c echo "Error: no test specified" && exit 1 src/App.test.js
+  Directory: /Users/dszczesniak/Documents/project
+  Output:
+  
+      at ProcessTermError.MessageError (/usr/local/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/usr/local/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
